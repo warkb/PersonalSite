@@ -1,0 +1,42 @@
+body {
+    background-image: url('img/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: green;
+    height: 100vh;
+}
+
+.card {
+    /* положение */
+    margin-top: 10%;
+    width: 400px;
+    height: 400px;
+    margin:auto;
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0; 
+    padding: 10px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.6), 
+                -3px 3px 3px 3px rgba(0, 0, 0, 0.6);
+    vertical-align: middle;
+
+}
+
+h1 {
+    font-family: "Arial";
+}
+
+.round {
+    border-radius: 200px;
+/*     alignment-baseline: central; */
+}
+
+.button {
+    padding: 0 10px;
+}
+
