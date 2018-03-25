@@ -1,5 +1,5 @@
 body {
-    background-image: url('img/background.jpg');
+    background-image: url('img/background_nature.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -13,8 +13,8 @@ body {
     width: 400px;
     height: 400px;
     margin:auto;
-    position: fixed;
-    top: 0; left: 0; bottom: 0; right: 0; 
+    position: relative;
+    top: 15%; left: 0; bottom: 0; right: 0; 
     padding: 10px;
 
     background-color: white;
@@ -31,6 +31,15 @@ h1 {
     font-family: "Arial";
 }
 
+.flex-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cardcontain {
+    }
+
 .round {
     border-radius: 200px;
 /*     alignment-baseline: central; */
@@ -38,5 +47,15 @@ h1 {
 
 .button {
     padding: 0 10px;
+
 }
 
+a img:hover {
+    transform: scale(1.2);
+    transition: transform 0.15s linear;
+}
+
+a img:active {
+    transform: scale(0.9);
+    transition: transform 0.05s linear;
+}
