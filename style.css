@@ -1,10 +1,17 @@
 body {
+    overflow: hidden;
+}
+#bgContainer {
     background-image: url('img/background_nature.jpg');
-    background-attachment: fixed;
     background-size: cover;
-    background-position: center;
     background-color: green;
-    height: 100vh;
+    background-size: 120vw;
+    background-repeat: no-repeat;
+    left: -100px;
+    top: -100px;
+    height: 120vh;
+    width: 120vw;
+    position: absolute;
 }
 
 .card {
@@ -13,16 +20,16 @@ body {
     width: 400px;
     height: 400px;
     margin:auto;
-    position: relative;
-    top: 15%; left: 0; bottom: 0; right: 0; 
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0; 
     padding: 10px;
 
     background-color: white;
 
     border-radius: 10px;
 
-    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.6), 
-                -3px 3px 3px 3px rgba(0, 0, 0, 0.6);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5), 
+                -3px 3px 3px 3px rgba(0, 0, 0, 0.5);
     vertical-align: middle;
 
 }
