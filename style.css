@@ -5,7 +5,7 @@ body {
     background-image: url('img/background_nature.jpg');
     background-size: cover;
     background-color: green;
-    background-size: 120vw;
+    background-size: 100% 120vh;
     background-repeat: no-repeat;
     left: -100px;
     top: -100px;
