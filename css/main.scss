@@ -143,6 +143,11 @@ background-color:#343a40!important
     @extend %base-h1;
 }
 
-.round {
-    border-radius: 50%;
+.contacts img {
+  width: 100%;
+}
+
+.contacts a img:hover {
+  transform: scale(1.2) !important;
+  transition: transform 0.15s linear !important; 
 }
