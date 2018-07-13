@@ -1,126 +1,140 @@
-.navbar{
- background:#F97300;
-}
-.nav-link , .navbar-brand{
- color: #f4f4f4;
- cursor: pointer;
-}
-.nav-link{
- margin-right: 1em !important;
-
+.navbar {
+  background: #f97300;
 }
 
-.nav-link:hover{
- background: #f4f4f4;
- color: #f97300;
-}
-.navbar-collapse{
- justify-content: flex-end;
-}
-.navbar-toggler{
-  background:#fff !important;
+.nav-link, .navbar-brand {
+  color: #f4f4f4;
+  cursor: pointer;
 }
 
-.navbar-collapse{
- justify-content: flex-end;
+.nav-link {
+  margin-right: 1em !important;
 }
 
-.bg-dark{
-background-color:#343a40!important
-}
-.bg-primary{
-background-color:#343a40!important
+.nav-link:hover {
+  background: #f4f4f4;
+  color: #f97300;
 }
 
-.header{
-    background-image: url('../img/background_nature.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+.navbar-collapse {
+  justify-content: flex-end;
 }
 
-.overlay{
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(244,244,244,0.69);
+.navbar-toggler {
+  background: #fff !important;
 }
 
-.description{
-    position: absolute;
-    top: 30%;
-    margin: auto;
-    padding: 2em;
+.navbar-collapse {
+  justify-content: flex-end;
 }
 
-.decription h1{
-    color: #f97300 !important;
-}
-.description p{
-    color: #666;
-    font-size: 20px;
-    width: 50%;
-    line-height: 1.5;
-}
-.description button{
-    border: 1px solid #f97300;
-    background: #f97300;
-    color: #fff;
+.bg-dark {
+  background-color: #343a40 !important;
 }
 
-.about{
-    margin: 4em 0;
-    padding: 1em;
-    position:  relative;
+.bg-primary {
+  background-color: #343a40 !important;
 }
 
-.about h1{
-    color: #f97300;
-    margin: 2em;
+.header {
+  background-image: url("../img/background_nature.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
-.about img{
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(244, 244, 244, 0.69);
 }
 
-.about span{
-    display: block;
-    color: #888;
-    position: absolute;
-    left: 115px;
+.description {
+  position: absolute;
+  top: 30%;
+  margin: auto;
+  padding: 2em;
 }
 
-.about .desc{
-    padding: 2em;
-    border-left: 4px solid #10828c;
+.decription h1 {
+  color: #f97300 !important;
 }
 
-.about .desc h3{
-    color: #10828c;
+.description p {
+  color: #666;
+  font-size: 20px;
+  width: 50%;
+  line-height: 1.5;
 }
 
-.about .desc p{
-    line-height: 2;
-    color: #888;
+.description button {
+  border: 1px solid #f97300;
+  background: #f97300;
+  color: #fff;
+}
+
+.about {
+  margin: 4em 0;
+  padding: 1em;
+  position: relative;
+}
+
+.about h1 {
+  color: #f97300;
+  margin: 2em;
+}
+
+.about img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.about span {
+  display: block;
+  color: #888;
+  position: absolute;
+  left: 115px;
+}
+
+.about .desc {
+  padding: 2em;
+  border-left: 4px solid #10828c;
+}
+
+.about .desc h3 {
+  color: #10828c;
+}
+
+.about .desc p {
+  line-height: 2;
+  color: #888;
+}
+
+.contacts, .portfolio {
+  margin: 4em 0;
+  padding: 1em;
+  position: relative;
+}
+
+.contacts h1, .portfolio h1 {
+  color: #f97300;
+  margin: 2em;
 }
 
 /*Portfolio*/
-.portfolio{
-    margin: 4em 0;
-    padding: 1em;
-    position: relative;
+.portfolio img {
+  height: 15rem;
+  width: 100%;
+  margin: 1em;
 }
 
-.portfolio h1{
-    color: #f97300;
-    margin: 2em;
+/*contacts*/
+.round {
+  border-radius: 50%;
 }
-.portfolio img{
-    height: 15rem;
-    width: 100%;
-    margin: 1em;
-}
+
+/*# sourceMappingURL=main.css.map */

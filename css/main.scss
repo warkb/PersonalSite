@@ -110,18 +110,39 @@ background-color:#343a40!important
     color: #888;
 }
 
+%base-page{
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;    
+}
+
+%base-h1{
+    color: $mainColor;
+    margin: 2em;
+}
+
 /*Portfolio*/
 .portfolio{
-    margin: 4em 0;
-    position: relative;
+    @extend %base-page;
 }
 
 .portfolio h1{
-    color: $mainColor;
-    margin: 2em;
+    @extend %base-h1;
 }
 .portfolio img{
     height: 15rem;
     width: 100%;
     margin: 1em;
+}
+
+/*contacts*/
+.contacts {
+    @extend %base-page;
+}
+.contacts h1 {
+    @extend %base-h1;
+}
+
+.round {
+    border-radius: 50%;
 }
