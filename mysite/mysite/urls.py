@@ -20,4 +20,5 @@ from django.urls import path
 urlpatterns = [
     url(r'^', include('mainpage.urls')),
     path('admin/', admin.site.urls),
+    url(r'^labirint/', include('labirint.urls')),
 ]

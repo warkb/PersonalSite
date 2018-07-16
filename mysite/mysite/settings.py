@@ -25,7 +25,8 @@ SECRET_KEY = 'h^10d99y6r*@djjibzp)*ugzd5v8#=f8zn5lxbavf2ztvf4fl6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['warkb.pythonanywhere.com']
+ALLOWED_HOSTS = ['warkb.pythonanywhere.com',
+'127.0.0.1']
 
 
 # Application definition
@@ -37,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mainpage'
+    'mainpage',
+    'labirint'
 ]
 
 MIDDLEWARE = [
