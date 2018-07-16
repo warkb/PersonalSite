@@ -1,4 +1,4 @@
-"""mysite URL Configuration
+"""myTwitter URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.0/topics/http/urls/
@@ -14,12 +14,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.conf.urls import url, include
 from django.urls import path
+from django.conf.urls import url, include
+from . import views
 
+app_name = 'mainpage'
 urlpatterns = [
-    url(r'^', include('mainpage.urls')),
-    path('admin/', admin.site.urls),
-    url(r'^labirint/', include('labirint.urls')),
-    url(r'^twitter/', include('twitter.urls')),
+    # url(r'^$', views.index, name='index'),
+    url(r'^$', views.index, name='index'),
+    url(r'^makenew/$', views.makeNew, name='makeNew'),
+
 ]
+

@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    /*justify-content: center;*/
+    align-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.maincentraldiv {
+    /*border: 1px solid red;*/
+    width: 50vw;
+    display: flex;
+    /*justify-content: center;*/
+    align-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.maincentraldiv h1 {
+    color: #00AAE5;
+}
+
+.card {
+    /*background-color: green;*/
+    /*border: 1px solid green!important;*/
+    margin: 10px;
+}
+
+.btn-secondary {
+    background-color: #00AAE5!important;
+    border-color: #00AAE5!important;
+}
+
+.btn-secondary:hover {
+    background-color: #00BDFF!important;
+    border-color: #00BDFF!important;
+}
