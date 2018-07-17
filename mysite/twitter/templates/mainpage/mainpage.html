@@ -13,7 +13,7 @@
     <h1>My Glory Twitter</h1>
     <!-- Формочка! -->
     <div class="contact-form">
-        <form class="text-center" action="{% url 'mainpage:makeNew'%}" method="post">
+        <form class="text-center" action="{% url 'twitter:makeNew'%}" method="post">
             {% csrf_token %}
             <div class="col-lg-12">
             <div class="form-group">

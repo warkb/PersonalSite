@@ -27,7 +27,7 @@
             <a class="nav-link" data-value="about">Обо мне</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " data-value="portfolio">Проекты</a>
+            <a class="nav-link " data-value="portfolio">Портфолио</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " data-value="contacts" href="#">Контакты</a>
@@ -54,17 +54,14 @@
       <h1 class="text-center">Обо мне</h1>
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="{% static 'mainpage/img/roundAvatar.png' %}" class="img-fluid fadeInUp wow">
-                <span class="text-justify"><!-- Web Developer --></span>
+                <img src="{% static 'mainpage/img/ava.jpg' %}" class="img-fluid fadeInUp wow">
+                <!-- <span class="text-justify">Web Developer</span> -->
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12 desc">
               
                 <h3>Владимир Курбатов</h3>
                 <p class="fadeInUp wow">
-                   ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. 
+                   Окончил Механико-Математический факультет Саратовского Государственного университета имени Н.Г. Чернышевского, по специальности Механика и Математическое Моделирование и уже более двух лет работаю в сфере разработки ПО. В свободное от работы время увлекаюсь спортом и игрой на гитаре. 
                 </p>
             </div>
         </div>
@@ -72,17 +69,21 @@
 </div>
 <!-- portfolio -->
 <div class="portfolio" id="portfolio">
-    <h1 class="text-center">Портфолио</h1>
-    <div class="container">
+    <h1 class="text-center">Портфолио
+    </h1>
+    <div class="text-justify text-center">(картинки кликабельны)</div>
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="{% static 'mainpage/img/portfolio/site.png' %}" align="center" class="img-fluid fadeInUp wow">
+                <a href="{% url 'mainpage:index' %}"><img src="{% static 'mainpage/img/portfolio/site.png' %}" align="center" class="img-fluid fadeInUp wow"></a>
+                <div class="text-justify text-center"><a href="https://github.com/warkb/PersonalSite">ссылка на репозиторий</a></div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="{% static 'mainpage/img/portfolio/labirint.png' %}" align="center" class="img-fluid fadeInUp wow">
+                <a href="{% url 'labirint:index' %}"><img src="{% static 'mainpage/img/portfolio/labirint.png' %}" align="center" class="img-fluid fadeInUp wow"></a>
+                <div class="text-justify text-center"><a href="https://github.com/warkb/LabirintJS">ссылка на репозиторий</a></div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="{% static 'mainpage/img/portfolio/twitter.png' %}" align="center" class="img-fluid fadeInUp wow">
+                <a href="{% url 'twitter:index' %}"><img src="{% static 'mainpage/img/portfolio/twitter.png' %}" align="center" class="img-fluid fadeInUp wow"></a>
+                <div class="text-justify text-center"><a href="https://github.com/warkb/MyTwitter">ссылка на репозиторий</a></div>
             </div>
         </div>
     </div>

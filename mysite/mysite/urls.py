@@ -17,9 +17,10 @@ from django.contrib import admin
 from django.conf.urls import url, include
 from django.urls import path
 
+app_name = 'mainpage'
 urlpatterns = [
-    url(r'^', include('mainpage.urls')),
+    url(r'^', include('mainpage.urls'), name='home'),
     path('admin/', admin.site.urls),
-    url(r'^labirint/', include('labirint.urls')),
-    url(r'^twitter/', include('twitter.urls')),
+    url(r'^labirint/', include('labirint.urls'), name='labirint'),
+    url(r'^twitter/', include('twitter.urls'), name='twitter'),
 ]

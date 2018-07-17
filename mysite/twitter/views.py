@@ -35,4 +35,4 @@ def makeNew(request):
         newStatement = Statement(author=request.POST['author'], 
             textOfStatement=request.POST['message'])
         newStatement.save()
-    return HttpResponseRedirect(reverse('mainpage:index'))
+    return HttpResponseRedirect(reverse('twitter:index'))
