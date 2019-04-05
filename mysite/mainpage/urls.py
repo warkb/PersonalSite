@@ -4,5 +4,6 @@ from . import views
 
 app_name = 'mainpage'
 urlpatterns = [
+    url(r'^saymyvkfriends', include('saymyvkfriends.urls')),
     url(r'^$', views.index, name='index'),
 ]
