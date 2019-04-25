@@ -19,8 +19,10 @@ from django.urls import path
 
 app_name = 'mainpage'
 urlpatterns = [
-    url(r'^', include('mainpage.urls'), name='home'),
     path('admin/', admin.site.urls),
-    url(r'^labirint/', include('labirint.urls'), name='labirint'),
-    url(r'^twitter/', include('twitter.urls'), name='twitter'),
+    path('labirint/', include('labirint.urls'), name='labirint'),
+    path('twitter/', include('twitter.urls'), name='twitter'),
+    path('mysupertrelloapp/', include('mySuperTrelloApp.urls')),
+    path('saymyvkfriends/', include('saymyvkfriends.urls')),
+    path('', include('mainpage.urls'), name='home'),
 ]

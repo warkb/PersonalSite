@@ -1,10 +1,10 @@
 from django.contrib import admin
 from django.conf.urls import url, include
+from django.urls import path
 from . import views
 
 app_name = 'mainpage'
 urlpatterns = [
-    url(r'^saymyvkfriends', include('saymyvkfriends.urls')),
-    url(r'^mysupertrelloapp', include('mySuperTrelloApp.urls')),
-    url(r'^$', views.index, name='index'),
+    path('admin/', admin.site.urls),
+    path('', views.index, name='index'),
 ]
