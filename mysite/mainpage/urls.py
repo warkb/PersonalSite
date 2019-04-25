@@ -5,5 +5,6 @@ from . import views
 app_name = 'mainpage'
 urlpatterns = [
     url(r'^saymyvkfriends', include('saymyvkfriends.urls')),
+    url(r'^mysupertrelloapp', include('mySuperTrelloApp.urls')),
     url(r'^$', views.index, name='index'),
 ]

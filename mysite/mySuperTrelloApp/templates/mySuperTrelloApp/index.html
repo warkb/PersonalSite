@@ -1,0 +1,14 @@
+{% extends "mySuperTrelloApp/base.html" %}
+{% load staticfiles %}
+{% block content %}
+    <div ng-app="Trello">
+        <div ng-view=""></div>
+    </div>
+{% endblock content %}
+
+{% block extra_javascript %}
+    <script src="{% static "angular/app/app.js" %}"></script>
+    <script src="{% static "angular/app/lib/angular-route/angular-route.js" %}"></script>
+{% endblock extra_javascript %}
+
+
