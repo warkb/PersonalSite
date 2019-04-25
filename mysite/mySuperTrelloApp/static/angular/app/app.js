@@ -2,7 +2,7 @@ var Trello = angular.module('Trello', ["ngRoute"]);
 
 Trello.config(['$routeProvider', function ($routeProvider){
     $routeProvider.when('/index', {
-        templateUrl: 'mySuperTrelloApp/static/angular/app/html/_main.html',
+        templateUrl: '/static/angular/app/html/_main.html',
         controller: 'IndexController'
     });
 }]);
