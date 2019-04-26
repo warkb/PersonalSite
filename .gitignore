@@ -1,3 +1,6 @@
-mysite/db.sqlite3
 *.pyc
-/.idea
+**/__pycache__/
+/.idea/
+/venv/
+/db.sqlite3
+**/migrations/
