@@ -1,8 +1,5 @@
 from django.db import models
 
-# логин: admin
-# пароль: trelloadmin
-
 class Desc(models.Model):
     name = models.CharField(max_length=200, help_text='Имя доски')
 

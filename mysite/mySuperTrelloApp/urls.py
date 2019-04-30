@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
-# app_name = 'mySuperTrelloApp'
+app_name = 'mySuperTrelloApp'
 
 urlpatterns = [
     path('', views.mainpage, name='mainpage'),

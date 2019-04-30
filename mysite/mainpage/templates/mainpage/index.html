@@ -1,67 +1,71 @@
 {% load staticfiles %}
 <!DOCTYPE html>
- <html>
- <head>
-     <title>WarKB</title>
-     <link rel="stylesheet" 
-     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
-     crossorigin="anonymous">
-     <link rel="stylesheet" type="text/css" href="{% static 'mainpage/css/main.css' %}">
-     <link rel="stylesheet" type="text/css" href="{% static 'mainpage/css/animate.css' %}">
-     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-     <script type="text/javascript" src="{% static 'mainpage/js/wow.min.js' %}"></script>
-     <script type="text/javascript" src="{% static 'mainpage/js/main.js' %}"></script>
- </head>
- <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <a href="#" class="navbar-brand" data-value="header">Домой</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" 
-        data-target="#navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+<html xmlns:background-image="http://www.w3.org/1999/xhtml">
+<head>
+    <title>WarKB</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'mainpage/css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'mainpage/css/animate.css' %}">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="{% static 'mainpage/js/wow.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'mainpage/js/main.js' %}"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <a href="#" class="navbar-brand" data-value="header">Домой</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportContent" aria-controls="navbarSupportContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav mr-4">
-          
-          <li class="nav-item">
-            <a class="nav-link" data-value="about">Обо мне</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " data-value="portfolio">Портфолио</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " data-value="contacts" href="#">Контакты</a>
-          </li>
+
+            <li class="nav-item">
+                <a class="nav-link" data-value="about">Обо мне</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " data-value="portfolio">Портфолио</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " data-value="contacts" href="#">Контакты</a>
+            </li>
         </ul>
-      </div>
-    </nav>
-    <header class="header" id="header">
-        <div class="overlay">
-            <div class="container">
-                <div class="description">
-                    <h3><font color="#f97300">
-                        Привет, добро пожаловать на мой официальный веб-сайт
-                        <p></p>
-                        <button class="btn btn-outline-secondary" data-value="about">Обо мне</button>
-                    </font></h3>
-                </div>
+    </div>
+</nav>
+<header class="header" id="header">
+    <div class="overlay">
+        <div class="container">
+            <div class="description">
+                <h3><font color="#f97300">
+                    Привет, добро пожаловать на мой официальный веб-сайт
+                    <p></p>
+                    <button class="btn btn-outline-secondary" data-value="about">Обо мне</button>
+                </font></h3>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 <!-- about section -->
 <div class="about" id="about">
     <div class="container">
-      <h1 class="text-center">Обо мне</h1>
+        <h1 class="text-center">Обо мне</h1>
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <img src="{% static 'mainpage/img/ava.jpg' %}" class="img-fluid fadeInUp wow">
                 <!-- <span class="text-justify">Web Developer</span> -->
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12 desc">
-              
+
                 <h3>Владимир Курбатов</h3>
                 <p class="fadeInUp wow">
-                   Окончил Механико-Математический факультет Саратовского Государственного университета имени Н.Г. Чернышевского, по специальности Механика и Математическое Моделирование и уже более двух лет работаю в сфере разработки ПО. В свободное от работы время увлекаюсь спортом и игрой на гитаре. 
+                    Окончил Механико-Математический факультет Саратовского Государственного университета
+                    имени Н.Г. Чернышевского, по специальности Механика и Математическое Моделирование
+                    и уже более двух лет работаю в сфере разработки ПО.
+                    В свободное от работы время увлекаюсь спортом и игрой на гитаре.
                 </p>
             </div>
         </div>
@@ -71,22 +75,49 @@
 <div class="portfolio" id="portfolio">
     <h1 class="text-center">Портфолио
     </h1>
+    <style>
+        .img-div {
+            display: block;
+            height: 280px;
+            /* width: 387px; */
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 20px;
+            background-position: center;
+            border-radius: 10px;
+        }
+    </style>
     <div class="text-justify text-center">(картинки кликабельны)</div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <a href="{% url 'mainpage:index' %}"><img src="{% static 'mainpage/img/portfolio/site.png' %}" align="center" class="img-fluid fadeInUp wow"></a>
-                <div class="text-justify text-center"><a href="https://github.com/warkb/PersonalSite">ссылка на репозиторий</a></div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <a href="{% url 'labirint:index' %}"><img src="{% static 'mainpage/img/portfolio/labirint.png' %}" align="center" class="img-fluid fadeInUp wow"></a>
-                <div class="text-justify text-center"><a href="https://github.com/warkb/LabirintJS">ссылка на репозиторий</a></div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <a href="{% url 'twitter:index' %}"><img src="{% static 'mainpage/img/portfolio/twitter.png' %}" align="center" class="img-fluid fadeInUp wow"></a>
-                <div class="text-justify text-center"><a href="https://github.com/warkb/MyTwitter">ссылка на репозиторий</a></div>
-            </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <a href="{% url 'mainpage:index' %}">
+                <!--<img src="{% static 'mainpage/img/portfolio/site.png' %}" align="center" class="img-fluid fadeInUp wow">-->
+                <div class='img-div img-fluid fadeInUp wow' style='background-image: url("{% static ' mainpage
+                /img/portfolio/site.png' %}")'>
+
         </div>
+        </a>
     </div>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+        <a href="{% url 'labirint:index' %}">
+            <!--<img src="{% static 'mainpage/img/portfolio/labirint.png' %}" align="center" class="img-fluid fadeInUp wow">-->
+            <div class='img-div img-fluid fadeInUp wow' style='background-image: url("{% static ' mainpage
+            /img/portfolio/labirint.png' %}")'>
+
+    </div>
+    </a>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+    <a href="{% url 'mySuperTrelloApp:mainpage' %}#!/index">
+        <!--<img src="{% static 'mainpage/img/portfolio/trello.png' %}" align="center" class="img-fluid fadeInUp wow">-->
+        <div class='img-div img-fluid fadeInUp wow' style='background-image: url("{% static ' mainpage
+        /img/portfolio/trello.png' %}")'>
+
+</div>
+</a>
+</div>
+</div>
+</div>
 </div>
 <!-- contacts -->
 <div class="contacts" id="contacts">
@@ -95,21 +126,22 @@
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <a href="https://github.com/warkb" class="button">
-                  <img src="{% static 'mainpage/img/githubLarge.png' %}" align="center" class="img-fluid fadeInUp wow round">
+                    <img src="{% static 'mainpage/img/githubLarge.png' %}" align="center"
+                         class="img-fluid fadeInUp wow round">
                 </a>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <a href="https://vk.com/warkb" class="button">
-                  <img src="{% static 'mainpage/img/vkLarge.png' %}" align="center" class="img-fluid fadeInUp wow">
+                    <img src="{% static 'mainpage/img/vkLarge.png' %}" align="center" class="img-fluid fadeInUp wow">
                 </a>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <a href="https://saratov.hh.ru/resume/140d22a9ff0561d5b10039ed1f536d31785474" class="button">
-                  <img src="{% static 'mainpage/img/hhLarge.png' %}" align="center" class="img-fluid fadeInUp wow">
+                    <img src="{% static 'mainpage/img/hhLarge.png' %}" align="center" class="img-fluid fadeInUp wow">
                 </a>
             </div>
         </div>
     </div>
 </div>
- </body>
- </html> 
+</body>
+</html>

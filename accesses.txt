@@ -1,0 +1,7 @@
+База Mysql
+Warkb$mysite - имя
+myNewSqlPass - пароль
+
+Админка
+admin
+djangoadmin
