@@ -20,6 +20,6 @@ from . import views
 app_name = 'mySuperTrelloApp'
 
 urlpatterns = [
-    path('', views.mainpage, name='mainpage'),
+    path('', views.mainpage, name='maintrellopage'),
     path('get_descs', views.get_descs, name='get_descs')
 ]
