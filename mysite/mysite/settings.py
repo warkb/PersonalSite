@@ -10,6 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
+# djadmin
+# djangoadmin
+
 import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -78,16 +81,16 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'Warkb$mysite',
-#         'USER': 'Warkb',
-#         'PASSWORD': 'myNewSqlPass',
-#         'HOST': 'Warkb.mysql.pythonanywhere-services.com',
-#         'PORT': '3306',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Warkb$mysite',
+        'USER': 'Warkb',
+        'PASSWORD': 'myNewSqlPass',
+        'HOST': 'Warkb.mysql.pythonanywhere-services.com',
+        'PORT': '3306',
+    }
+}
 
 
 # Password validation
@@ -129,6 +132,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = "/var/www/static/"
 try:
-    from . import local_settings
+    from .local_settings import DATABASES
 except BaseException:
     print('!!!!!!!!!!!!!!!!!!!!!!!!!')
