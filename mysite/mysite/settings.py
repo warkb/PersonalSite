@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -79,16 +78,16 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Warkb$mysite',
-        'USER': 'Warkb',
-        'PASSWORD': 'myNewSqlPass',
-        'HOST': 'Warkb.mysql.pythonanywhere-services.com',
-        'PORT': '3306',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'Warkb$mysite',
+#         'USER': 'Warkb',
+#         'PASSWORD': 'myNewSqlPass',
+#         'HOST': 'Warkb.mysql.pythonanywhere-services.com',
+#         'PORT': '3306',
+#     }
+# }
 
 
 # Password validation
@@ -113,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = 'UTC'
 
@@ -129,3 +128,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = "/var/www/static/"
+try:
+    from . import local_settings
+except BaseException:
+    print('!!!!!!!!!!!!!!!!!!!!!!!!!')
