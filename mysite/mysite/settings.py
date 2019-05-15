@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'labirint',
     'twitter',
     'saymyvkfriends',
-    'mySuperTrelloApp'
+    'mySuperTrelloApp',
+    'blog',
 ]
 
 MIDDLEWARE = [

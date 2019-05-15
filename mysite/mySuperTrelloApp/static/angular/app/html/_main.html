@@ -1,15 +1,16 @@
 <header>
     <h1>MySuperTrello</h1>
-    <h2>only the most necessary</h2>
+    <!--<h2>only the most necessary</h2>-->
+    <h2>(в разработке)</h2>
 </header>
 <div class="content" ng-controller="IndexController">
-    <div class="list-tasks" ng-repeat="desc in descs">
+    <div class="list-tasks" ng-repeat="desc in descs" dname="{{ desc.name }}">
         <div class="wrapper">
             <h3>{{ desc.name }}</h3>
-                <div class="card" ng-repeat="card in desc.cards">
-                    {{ card.text }}
-                </div>
+            <div class="card" ng-repeat="card in desc.cards">
+                {{ card.text }}
+            </div>
         </div>
-        <div class="add-cards">Добавить ещё одну карточку</div>
+        <div class="add-cards" data-js-add-card>Добавить ещё одну карточку</div>
     </div>
 </div>
