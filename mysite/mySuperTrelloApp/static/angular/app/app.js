@@ -8,16 +8,8 @@ Trello.config(['$routeProvider', function ($routeProvider) {
     });
 }]);
 
-loaded = false;
-
 Trello.controller('IndexController', ['$http', '$scope', function IndexController($http, $scope) {
     var self = this;
-    // получаем список досок с сервера
-    $http.get('/mysupertrelloapp/get_descs').then(function (response) {
-        console.log(response.data);
-        $scope.descs = response.data;
-        descs = $scope.descs;
-    });
 }]);
 
 // TODO: когда разберусь с контроллерами - сделать через контроллер
