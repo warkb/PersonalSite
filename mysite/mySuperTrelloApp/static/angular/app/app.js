@@ -1,6 +1,7 @@
 var Trello = angular.module('Trello', ["ngRoute"]);
 
 Trello.config(['$routeProvider', function ($routeProvider) {
+    // при загрузке отображаем базовый шаблон
     $routeProvider.when('/index', {
         templateUrl: '/static/angular/app/html/_main.html',
         controller: 'IndexController'
@@ -11,6 +12,7 @@ loaded = false;
 
 Trello.controller('IndexController', ['$http', '$scope', function IndexController($http, $scope) {
     var self = this;
+    // получаем список досок с сервера
     $http.get('/mysupertrelloapp/get_descs').then(function (response) {
         console.log(response.data);
         $scope.descs = response.data;
