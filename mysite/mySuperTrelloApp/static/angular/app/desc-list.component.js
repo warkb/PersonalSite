@@ -9,5 +9,11 @@ angular.module('Trello').component('descList', {
             // для добавления карточек, убрать когда буду делать через контроллер
             descs = $scope.descs;
         });
+        self.addCard = function (desc) {
+            /**
+             * Добавляет новую карточку к доске
+             */
+            desc.cards.push({text: 'Новая карточка'});
+        }
     }
 });

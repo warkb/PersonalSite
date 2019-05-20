@@ -12,11 +12,4 @@ Trello.controller('IndexController', ['$http', '$scope', function IndexControlle
     var self = this;
 }]);
 
-// TODO: когда разберусь с контроллерами - сделать через контроллер
-$(document).on('click', '[data-js-add-card]', function (event) {
-    var newCard = $('<div>', {
-        'class': 'card'
-    }).text('Новая карточка');
-    $(this).parent().find('.wrapper').append(newCard);
-});
 
