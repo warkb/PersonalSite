@@ -13,9 +13,8 @@ class Desc(models.Model):
 
 class Card(models.Model):
     text = models.TextField(help_text='Позиция на доске')
-    data = models.DateTimeField(auto_now_add=True, help_text='Время создания')
+    date = models.DateTimeField(auto_now_add=True, help_text='Время создания')
     desc = models.ForeignKey(Desc, on_delete=models.CASCADE, help_text='Родительская доска')
-    position = models.PositiveIntegerField(help_text='Позиция на доске')
 
     def __str__(self):
         return self.text

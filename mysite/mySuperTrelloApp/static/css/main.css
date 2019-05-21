@@ -46,3 +46,7 @@ h3 {
 	margin: 0;
 	padding-bottom: 5px;
 }
+
+.clearfix {
+	clear: both;
+}

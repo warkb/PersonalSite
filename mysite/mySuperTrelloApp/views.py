@@ -20,7 +20,7 @@ def get_descs(request):
     for desc in descs:
         descJson = {}
         descJson['name'] = desc.name
-        cards = [{'text': card.text, 'position': card.position} for card in desc.card_set.all()]
+        cards = [{'text': card.text, 'date': int(card.date.timestamp())} for card in desc.card_set.all()]
         descJson['cards'] = cards
         descsJson.append(descJson)
 

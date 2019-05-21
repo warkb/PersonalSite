@@ -14,6 +14,13 @@ angular.module('Trello').component('descList', {
              * Добавляет новую карточку к доске
              */
             desc.cards.push({text: 'Новая карточка'});
+        };
+        self.removeCard = function (desc, card) {
+            console.log(`desc=${desc}`);
+            console.log(desc);
+            console.log(`card=${card}`);
+            console.log(card);
+            desc.cards = desc.cards.filter(p => p.$$hashKey !== card.$$hashKey)
         }
     }
 });
